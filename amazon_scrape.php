@@ -30,8 +30,6 @@ function ThalluAccessAPI($url)
 	$html    = str_get_html($html);
 
 if (!empty($html)) {
-   
-    ############## END OF IP BLOC script ################
     
     if ($html->find("div[id=resultsCol] ul li")) {
         foreach ($html->find("div[id=resultsCol] ul li") as $elem) {
